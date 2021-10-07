@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      let d;
+      let tiime;
+      let daate;
+      const option = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      setInterval(() => {
+        d = new Date();
+        daate = d.toLocaleDateString(undefined, option);
+        tiime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+        document.getElementById("tim").innerHTML = tiime + " on " + daate;
+      }, 1000);
+
+    </script>
+  </head>
+  <body>
+      <div class="main">
+        <div class="block">
+              <h1 class="timee">
+                Current time<br><br><br><span id="tim"></span>
+              </h1>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

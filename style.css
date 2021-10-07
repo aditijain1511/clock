@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("clock.jpg");
+  background-repeat: none;
+  background-size: cover;
+  text-align: center;
+}
+.main {
+  background: url("time.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  margin: 100px auto;
+  padding-top: 50px;
+  padding-left: 74px;
+}
+
+.block {
+  background-color: rgb(252, 249, 249);
+  width: 50vh;
+  height: 60vh;
+  text-align: center;
+  padding: 50px;
+  font-family: "Orbitron", sans-serif;
+}
+#timee {
+  text-align: center;
+  padding-bottom: 150px;
+}
